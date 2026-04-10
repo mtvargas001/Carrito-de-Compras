@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musa Store | Tienda de Ropa Juvenil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+
+<section class="hero text-white text-center d-flex align-items-center justify-content-center mb-4">
+    <div class="container">
+        <h1 class="display-4">Musa Store</h1>
+        <p class="lead">¡Expresa tu estilo! Descubre la moda más actual y las tendencias que te harán brillar.</p>
+        <a href="#productos" class="btn btn-primary btn-lg">Explorar Productos</a>
+    </div>
+</section>
+
+<div class="container py-4" id="productos">
+    <h2 class="text-center mb-4">Nuestra Colección</h2>
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMG/blusa 5.jpg" class="card-img-top" alt="Blusa con cuello halter">
+                        <div class="card-body">
+                            <h5 class="card-title">Top Blanco descubierto de la espalda</h5>
+                            <p class="card-text text-muted">$320 MXN</p>
+                            <button class="btn btn-success w-100" onclick="agregarProducto('Blusa Halter de Seda')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMG/blusas mujer 1.jpg" class="card-img-top" alt="Blusa blanca de tirantes">
+                        <div class="card-body">
+                            <h5 class="card-title">Blusa Halter de Seda</h5>
+                            <p class="card-text text-muted">$450 MXN</p>
+                            <button class="btn btn-success w-100" onclick="agregarProducto('Blusa de Tirantes')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMG/blusas mujer 2.jpg" class="card-img-top" alt="Blusa Blanca">
+                        <div class="card-body">
+                            <h5 class="card-title">Blusa Blanca</h5>
+                            <p class="card-text text-muted">$380 MXN</p>
+                            <button class="btn btn-success w-100" onclick="agregarProducto('Blusa Blanca')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMG/blusa mujer 4.jpg" class="card-img-top" alt="Blusa blanca de cuello en V">
+                        <div class="card-body">
+                            <h5 class="card-title">Blusa de Tirantes</h5>
+                            <p class="card-text text-muted">$350 MXN</p>
+                            <button class="btn btn-success w-100" onclick="agregarProducto('Blusa de Tirantes')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMG/blusa mujer 3.jpg" class="card-img-top" alt="Blusa casual manga 3/4">
+                        <div class="card-body">
+                            <h5 class="card-title">Blusa Casual</h5>
+                            <p class="card-text text-muted">$350 MXN</p>
+                            <button class="btn btn-success w-100" onclick="agregarProducto('Blusa Casual')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMG/blusas 1.jpg" class="card-img-top" alt="Blusa de verano con volantes">
+                        <div class="card-body">
+                            <h5 class="card-title">Blusas de Verano</h5>
+                            <p class="card-text text-muted">$340 MXN</p>
+                            <button class="btn btn-success w-100" onclick="agregarProducto('Blusas de Verano')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMG/blusas 2.jpg" class="card-img-top" alt="Top estampado">
+                        <div class="card-body">
+                            <h5 class="card-title">Top estampado</h5>
+                            <p class="card-text text-muted">$250 MXN</p>
+                            <button class="btn btn-success w-100" onclick="agregarProducto('Top estampado')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMG/blusas 3.jpg" class="card-img-top" alt="Blusa de cuello de tortuga">
+                        <div class="card-body">
+                            <h5 class="card-title">Blusa con estampado </h5>
+                            <p class="card-text text-muted">$310 MXN</p>
+                            <button class="btn btn-success w-100" onclick="agregarProducto('Blusa con estampado')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMG/blusas 4.jpg" class="card-img-top" alt="Blusa blanca tipo top">
+                        <div class="card-body">
+                            <h5 class="card-title">Conjunto de Tops</h5>
+                            <p class="card-text text-muted">$360 MXN</p>
+                            <button class="btn btn-success w-100" onclick="agregarProducto('Conjunto de Tops')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMG/Sudaderas 1.jpg" class="card-img-top" alt="Sudadera rosa con gorro">
+                        <div class="card-body">
+                            <h5 class="card-title">Conjunto de 3 sudaderas</h5>
+                            <p class="card-text text-muted">$650 MXN</p>
+                            <button class="btn btn-success w-100" onclick="agregarProducto('Conjunto de 3 sudaderas')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMG/sudadera 2.jpg" class="card-img-top" alt="Sudadera negra con estampado">
+                        <div class="card-body">
+                            <h5 class="card-title">Sudadera con Estampado</h5>
+                            <p class="card-text text-muted">$580 MXN</p>
+                            <button class="btn btn-success w-100" onclick="agregarProducto('Sudadera con Estampado')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMG/sudadera 3.jpg" class="card-img-top" alt="Sudadera blanca con texto">
+                        <div class="card-body">
+                            <h5 class="card-title">Sudadera Oversize Negra</h5>
+                            <p class="card-text text-muted">$560 MXN</p>
+                            <button class="btn btn-success w-100" onclick="agregarProducto('Sudadera Oversize Blanca')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMG/sudadera 4.jpg" class="card-img-top" alt="Sudadera gris con estampado">
+                        <div class="card-body">
+                            <h5 class="card-title">Sudadera Oversize Blanca</h5>
+                            <p class="card-text text-muted">$570 MXN</p>
+                            <button class="btn btn-success w-100" onclick="agregarProducto('Sudadera Gris')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMG/pantalon formal para mujer 1.jpg" class="card-img-top" alt="Pantalón formal blanco">
+                        <div class="card-body">
+                            <h5 class="card-title">Pantalón Formal</h5>
+                            <p class="card-text text-muted">$650 MXN</p>
+                            <button class="btn btn-success w-100" onclick="agregarProducto('Pantalón Formal')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMG/pantalon juvenil 1.jpg" class="card-img-top" alt="Pantalón casual azul">
+                        <div class="card-body">
+                            <h5 class="card-title">Pantalón Azul con estampados de estrellas </h5>
+                            <p class="card-text text-muted">$410 MXN</p>
+                            <button class="btn btn-success w-100" onclick="agregarProducto('Pantalón Casual')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMG/pantalon juvenil 2.jpg" class="card-img-top" alt="Pantalón de mezclilla claro">
+                        <div class="card-body">
+                            <h5 class="card-title">Pantalón Mezclilla</h5>
+                            <p class="card-text text-muted">$700 MXN</p>
+                            <button class="btn btn-success w-100" onclick="agregarProducto('Pantalón Mezclilla')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMG/pantalonde cuadros mujer 2.jpg" class="card-img-top" alt="Pantalón de cuadros">
+                        <div class="card-body">
+                            <h5 class="card-title">Pantalón de cuadros</h5>
+                            <p class="card-text text-muted">$620 MXN</p>
+                            <button class="btn btn-success w-100" onclick="agregarProducto('Pantalón a Cuadros')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMG/bolsa juvenil 1.jpg" class="card-img-top" alt="Bolsa juvenil de hombro">
+                        <div class="card-body">
+                            <h5 class="card-title">Bolsa Juvenil</h5>
+                            <p class="card-text text-muted">$450 MXN</p>
+                            <button class="btn btn-success w-100" onclick="agregarProducto('Bolsa Juvenil')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMG/bolsa mujer 1.jpg" class="card-img-top" alt="Bolso de mano de piel">
+                        <div class="card-body">
+                            <h5 class="card-title">Bolso de Piel</h5>
+                            <p class="card-text text-muted">$580 MXN</p>
+                            <button class="btn btn-success w-100" onclick="agregarProducto('Bolso de Piel')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMG/bolsa mujer 2.jpg" class="card-img-top" alt="Bolso tote café">
+                        <div class="card-body">
+                            <h5 class="card-title">Bolso Tote</h5>
+                            <p class="card-text text-muted">$600 MXN</p>
+                            <button class="btn btn-success w-100" onclick="agregarProducto('Bolso Tote')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMG/bolsa de mujer 3.jpg" class="card-img-top" alt="Bolso de diseñador">
+                        <div class="card-body">
+                            <h5 class="card-title">Bolso Elegante</h5>
+                            <p class="card-text text-muted">$750 MXN</p>
+                            <button class="btn btn-success w-100" onclick="agregarProducto('Bolso Elegante')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMG/bolsa juvenil 2.jpg" class="card-img-top" alt="Mochila juvenil rosa">
+                        <div class="card-body">
+                            <h5 class="card-title">Bolsa Juvenil</h5>
+                            <p class="card-text text-muted">$490 MXN</p>
+                            <button class="btn btn-success w-100" onclick="agregarProducto('Mochila Juvenil')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMG/vestido elegante.jpg" class="card-img-top" alt="Vestido de noche">
+                        <div class="card-body">
+                            <h5 class="card-title">Vestido Elegante</h5>
+                            <p class="card-text text-muted">$850 MXN</p>
+                            <button class="btn btn-success w-100" onclick="agregarProducto('Vestido de Noche')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header bg-dark text-white">Tu Carrito</div>
+                <div class="card-body text-center">
+                    <button class="btn btn-danger w-100 mb-3" onclick="vaciarCarrito()">Vaciar Carrito</button>
+                    <ul class="list-group list-group-flush" id="lista-carrito">
+                        <li class="list-group-item text-muted text-center">No hay productos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="list-unstyled">
+            <li><a href="#" class="nav-link">Inicio</a></li>
+            <li><a href="#" class="nav-link">Colección</a></li>
+            <li><a href="#" class="nav-link">Contacto</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCarrito" aria-labelledby="offcanvasCarritoLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasCarritoLabel">Tu Carrito</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="d-grid mb-3">
+            <button class="btn btn-danger" onclick="vaciarCarrito()">Vaciar Carrito</button>
+        </div>
+        <ul class="list-group" id="lista-carrito-offcanvas">
+            <li class="list-group-item text-muted text-center">No hay productos</li>
+        </ul>
+    </div>
+</div>
+
+<script src="js/script1.js"></script>
+</body>
+</html>
