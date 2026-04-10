@@ -1,0 +1,119 @@
+/* Animaciones de agregado/eliminado */
+.agregado {
+  background-color: #f2ceea !important; /* Usando el primer color de tu paleta como base para el agregado */
+  color: #402a28 !important; /* Usando el color más oscuro de tu paleta para el texto */
+  animation: fade 1s ease-in-out;
+}
+
+.eliminado {
+  background-color: #f8d7da !important; /* Rojo claro para el eliminado, puedes ajustar si prefieres uno de tu paleta */
+  color: #721c24 !important;
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+  from { opacity: 0.3; }
+  to { opacity: 1; }
+}
+
+/* HERO con imagen de fondo */
+.hero {
+  position: relative;
+  height: 50vh; /* ajusta altura del hero */
+  /* Si quieres usar una imagen, pon aquí la ruta. De lo contrario, usará un color de tu paleta */
+  background-image: url('../IMG/hero.jpg'); /* Puedes cambiar esto por una imagen si lo deseas, o eliminarlo para usar solo color */
+  background-color: #a68160; /* Usando el segundo color de tu paleta como fondo si no hay imagen */
+  background-size: cover; /* hace que la imagen cubra todo el contenedor */
+  background-position: center center; /* centra la imagen */
+  background-repeat: no-repeat; /* evita repetición */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff; /* Texto blanco para contraste, puedes ajustar si prefieres un color de tu paleta */
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* overlay oscuro para que el texto se vea bien */
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2; /* asegura que el texto esté por encima del overlay */
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Compensación si hay navbar fijo */
+#productos {
+  scroll-margin-top: 70px;
+}
+
+/* Colores de la tienda */
+body {
+    background-color: #f2ceea !important; /* Primer color de tu paleta para el fondo general */
+}
+
+.bg-dark {
+    background-color: #402a28 !important; /* Último color de tu paleta para el carrito y otros elementos oscuros */
+    color: #f2ceea !important; /* Texto claro para contraste */
+}
+
+.btn-primary {
+    background-color: #8c5a56 !important; /* Cuarto color de tu paleta para botones principales */
+    border-color: #8c5a56 !important;
+}
+
+.btn-primary:hover {
+    background-color: #a68160 !important; /* Segundo color de tu paleta para el hover */
+    border-color: #a68160 !important;
+}
+
+.btn-success {
+    background-color: #d9c5c1 !important; /* Tercer color de tu paleta para botones de éxito (Comprar) */
+    border-color: #d9c5c1 !important;
+    color: #402a28 !important; /* Texto oscuro para contraste */
+}
+
+.btn-success:hover {
+    background-color: #a68160 !important; /* Segundo color de tu paleta para el hover */
+    border-color: #a68160 !important;
+    color: #ffffff !important; /* Texto blanco para contraste */
+}
+
+.btn-danger {
+    background-color: #e53935 !important; /* Mantenemos un rojo estándar para peligro, pero puedes elegir uno de tu paleta si lo prefieres */
+    border-color: #e53935 !important;
+    color: #ffffff !important;
+}
+
+.btn-danger:hover {
+    background-color: #d32f2f !important;
+    border-color: #d32f2f !important;
+}
+
+.card {
+    border: none; /* Quitamos el borde de las tarjetas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Fondo blanco para las tarjetas, para que los productos destaquen */
+}
+
+.card-title {
+    color: #402a28; /* Color de título oscuro para contraste */
+}
+
+.card-text.text-muted {
+    color: #a68160 !important; /* Segundo color de tu paleta para texto secundario */
+}
+
+.list-group-item {
+    background-color: #ffffff; /* Fondo blanco para los ítems del carrito */
+    color: #402a28; /* Texto oscuro para los ítems del carrito */
+}
